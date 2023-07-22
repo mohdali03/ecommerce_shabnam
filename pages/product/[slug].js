@@ -4,15 +4,14 @@ import ReactWhatsapp from 'react-whatsapp';
 import { client, urlFor } from '../../lib/client';
 import { Product } from '../../components';
 import { useStateContext } from '../../context/StateContext';
-import emailjs from "@emailjs/browser";
+// import Image from 'next/image'
+import Link from 'next/link'
+
 
 const ProductDetails = ({ product, products }) => {
   const { image, name, details, price } = product;
   const [index, setIndex] = useState(0);
   const { decQty, incQty, qty, onAdd, setShowCart } = useStateContext();
-
-  // const setdata = 0;
-
 
   const inputname = useRef(null);
   const [updatedname, setUpdatedname] = useState('');
@@ -27,32 +26,8 @@ const ProductDetails = ({ product, products }) => {
   const [updatedmobile, setUpdatedmobile] = useState('');
   const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_ge595o5",
-        "template_3bxwj8i",
-        form.current,
-        "vVgB_8hWEix9icZ9E"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          console.log("message sent");
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
 
   const handleBuyNow = () => {
-    // onAdd(product, qty);
-    // console.log(product)
-    // console.log(qty)
-    // console.log(document.getElementsByClassName('num').value);
     setUpdatedname(inputname.current.value);
     console.log(updatedname)
 
@@ -63,25 +38,14 @@ const ProductDetails = ({ product, products }) => {
     setUpdatedqty(inputqty.current.value);
     console.log(updatedqty)
   }
-  // function getData(val)
-  // {
-  //   console.warn(val.target.value)
-  //   setData(val.target.value)
-  //   let inputname = val.target.value
-  //   return inputname
 
-  // }
-  // const getData = () => {
-  //   // 👇 "message" stores input field value
-  //   setUpdated(message);
-  // };
 
   return (
     <div>
       <div className="product-detail-container">
         <div>
           <div className="image-container">
-            <img src={urlFor(image && image[index])} className="product-detail-image" />
+            <img src={urlFor(image && image[index])} className="product-detail-image" alt='slug' />
           </div>
           <div className="small-images-container">
             {image?.map((item, i) => (
@@ -89,7 +53,7 @@ const ProductDetails = ({ product, products }) => {
                 key={i}
                 src={urlFor(item)}
                 className={i === index ? 'small-image selected-image' : 'small-image'}
-                onMouseEnter={() => setIndex(i)} m />
+                onMouseEnter={() => setIndex(i)} alt='slug2' />
             ))}
           </div>
         </div>
@@ -111,7 +75,7 @@ const ProductDetails = ({ product, products }) => {
           <h4>Details: </h4>
           <p>{details}</p>
           <p className="price">₹{price}</p>
-          <form ref={form} onSubmit={sendEmail}>
+          <form>
             <div className="quantity name">
               <h3>Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
               <br className='brslug' />
@@ -152,17 +116,19 @@ const ProductDetails = ({ product, products }) => {
 
 
                 <input type='number' className='num' min="20" ref={inputqty} name='user_quantity' placeholder='Minimum quatity is 20' required></input>
-                </p>
-              </div>
-              <div className="buttons">
-              
+              </p>
+            </div>
+            <div className="buttons">
+
 
               <button type="submit" className="buy-now" onClick={handleBuyNow}>
 
-                <a
+                <Link
                   href={`https://wa.me/918828081163?text=Hello%20Shabnam%20Bags.%20My%20name%20is%20${updatedname}%20and%20I%20am%20interested%20to%20buy%20${name}%20at%20${price}%20in%20a%20quantity%20of%20${updatedqty}.%20Please%20revert%20back%20as%20soon%20as%20possible%20and%20my%20Email%20is%20${updatedemail}`}
                   target="_blank"
-                  rel="noopener noreferrer">Enquiry</a>
+                  rel="noopener noreferrer">
+                  Enquiry
+                </Link>
 
 
               </button>
