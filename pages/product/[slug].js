@@ -4,8 +4,6 @@ import ReactWhatsapp from 'react-whatsapp';
 import { client, urlFor } from '../../lib/client';
 import { Product } from '../../components';
 import { useStateContext } from '../../context/StateContext';
-// import Image from 'next/image'
-import Link from 'next/link'
 
 
 const ProductDetails = ({ product, products }) => {
@@ -27,17 +25,35 @@ const ProductDetails = ({ product, products }) => {
   const form = useRef();
 
 
-  const handleBuyNow = () => {
+  const handleBuyNow = (event) => {
+    event.preventDefault();
     setUpdatedname(inputname.current.value);
     console.log(updatedname)
-
     setUpdatedemail(inputemail.current.value);
     console.log(updatedemail)
     setUpdatedmobile(inputmobile.current.value);
     console.log(updatedmobile)
     setUpdatedqty(inputqty.current.value);
     console.log(updatedqty)
-  }
+
+    const inputNameValue = inputname.current.value;
+    console.log(inputNameValue)
+    const inputEmailValue = inputemail.current.value;
+    const inputMobileValue = inputmobile.current.value;
+    const inputQtyValue = inputqty.current.value;
+
+    if (
+      inputNameValue.trim() !== '' ||
+      inputEmailValue.trim() !== '' ||
+      inputMobileValue.trim() !== '' ||
+      inputQtyValue.trim() !== ''
+    ) {
+      window.location.href = `https://wa.me/918828081163?text=Hello%20Shabnam%20Bags.%20My%20name%20is%20${inputNameValue}%20and%20I%20am%20interested%20to%20buy%20${name}%20at%20${price}%20in%20a%20quantity%20of%20${inputQtyValue}.%20Please%20revert%20back%20as%20soon%20as%20possible%20and%20my%20Email%20is%20${inputEmailValue}`
+    } else {
+    }
+  };
+
+
 
 
   return (
@@ -75,7 +91,7 @@ const ProductDetails = ({ product, products }) => {
           <h4>Details: </h4>
           <p>{details}</p>
           <p className="price">₹{price}</p>
-          <form>
+          <form onSubmit={handleBuyNow}>
             <div className="quantity name">
               <h3>Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
               <br className='brslug' />
@@ -118,22 +134,12 @@ const ProductDetails = ({ product, products }) => {
                 <input type='number' className='num' min="20" ref={inputqty} name='user_quantity' placeholder='Minimum quatity is 20' required></input>
               </p>
             </div>
-            <div className="buttons">
 
-
-              <button type="submit" className="buy-now" onClick={handleBuyNow}>
-
-                <Link
-                  href={`https://wa.me/918828081163?text=Hello%20Shabnam%20Bags.%20My%20name%20is%20${updatedname}%20and%20I%20am%20interested%20to%20buy%20${name}%20at%20${price}%20in%20a%20quantity%20of%20${updatedqty}.%20Please%20revert%20back%20as%20soon%20as%20possible%20and%20my%20Email%20is%20${updatedemail}`}
-                  target="_blank"
-                  rel="noopener noreferrer">
-                  Enquiry
-                </Link>
-
-
-              </button>
-            </div>
+            <button type="submit" className="enquiry">
+              Enquiry
+            </button>
           </form>
+
         </div>
       </div>
       <div className="maylike-products-wrapper">

@@ -1,11 +1,20 @@
 import React from "react";
 // import { AiFillInstagram, AiOutlineTwitter} from 'react-icons';
-
+import Link from "next/link";
 const Footer = () => {
   return (
     <div className="footer-container">
-      <p>&copy; 2022 Shabnam Bag </p>
+      <p>
+        <strong>&copy; 2022 Shabnam Bag</strong>{" "}
+      </p>
+      <Link className="companylink" href={`https://geekytechh.netlify.app`}>
+        <a target="_blank">
+          Created By <strong>Geeky Techh</strong>
+        </a>
+      </Link>
     </div>
+    // <div className="footer-container">
+    // </div>
   );
 };
 

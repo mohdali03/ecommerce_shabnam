@@ -17,7 +17,7 @@ const FooterBanner = ({}) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <a target="_blank">
+              <a className="addresslink" target="_blank">
                 Shop No. 180 - 216 / 218, Ground Floor, Lohe Ki Chawl, (Mumbai
                 Bag Market), M. Azad Road, Opp. K.K. Art House,
                 <br />
@@ -31,9 +31,6 @@ const FooterBanner = ({}) => {
           <h3>Mr. Jamaluddin: 9320919157</h3>
           <br />
           <h3>Mr. Saddam: 9594679390 / 7977175538</h3>
-        </div>
-        <div className="right">
-          <img className="Shopimg" src="./Shop.jpg" alt="Shop" />
         </div>
       </div>
     </div>
