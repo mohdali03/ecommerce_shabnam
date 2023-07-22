@@ -20,7 +20,7 @@ const FooterBanner = ({}) => {
               <a className="addresslink" target="_blank">
                 Shop No. 180 - 216 / 218, Ground Floor, Lohe Ki Chawl, (Mumbai
                 Bag Market), M. Azad Road, Opp. K.K. Art House,
-                <br />
+                <br className="br" />
                 Madanpura, Mumbai - 400 008.
               </a>
             </Link>
