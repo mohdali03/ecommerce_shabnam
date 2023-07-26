@@ -48,7 +48,7 @@ const ProductDetails = ({ product, products }) => {
       inputMobileValue.trim() !== '' ||
       inputQtyValue.trim() !== ''
     ) {
-      window.location.href = `https://wa.me/918828081163?text=Hello%20Shabnam%20Bags.%20My%20name%20is%20${inputNameValue}%20and%20I%20am%20interested%20to%20buy%20${name}%20at%20${price}%20in%20a%20quantity%20of%20${inputQtyValue}.%20Please%20revert%20back%20as%20soon%20as%20possible%20and%20my%20Email%20is%20${inputEmailValue}`
+      window.location.href = `https://wa.me/917977175538?text=Hello%20Shabnam%20Bags.%20My%20name%20is%20${inputNameValue}%20and%20I%20am%20interested%20to%20buy%20${name}%20at%20${price}%20in%20a%20quantity%20of%20${inputQtyValue}.%20Please%20revert%20back%20as%20soon%20as%20possible%20and%20my%20Email%20is%20${inputEmailValue}`
     } else {
     }
   };
