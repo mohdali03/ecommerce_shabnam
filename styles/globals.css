@@ -757,8 +757,8 @@ input[type="tel"] {
   }
   .hero-banner-image {
     width: 50%;
-    top: 200px;
-    right: 14px;
+    top: 275px;
+    right: 15px;
   }
   .footer-banner-container {
     height: fit-content;
@@ -897,7 +897,7 @@ input[type="tel"] {
     display: none;
   }
   .hero-banner-container {
-    height: 560px;
+    height: 570px;
     padding: 40px 15px;
     max-width: 95vw;
     /* margin: auto; */
@@ -907,9 +907,6 @@ input[type="tel"] {
     display: none;
   }
 
-  .hero-banner-image{
-    margin-top: 30px;
-  }
 
   .footer-banner-container{
     height: fit-content;
@@ -947,9 +944,11 @@ input[type="tel"] {
     margin-left: 50px;
   }
   .hero-banner-image {
-    width: 50%;
-    top: 200px;
+    width: 55%;
+    top: 255px;
     right: 14px;
+    margin-top: 30px;
+
   }
 
   .Shopimg {
