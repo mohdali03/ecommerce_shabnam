@@ -688,7 +688,7 @@ input[type="tel"] {
 @media screen and (min-width: 600px) and (max-width: 900px) {
   .hero-banner-image {
     width: 40%;
-    top: 60px;
+    top: 100px;
     right: -8px;
   }
 
@@ -953,7 +953,7 @@ input[type="tel"] {
   }
   .hero-banner-image {
     width: 55%;
-    top: 245px;
+    top: 250px;
     right: 14px;
     margin-top: 30px;
   }
@@ -965,6 +965,6 @@ input[type="tel"] {
   .product-detail-image {
     width: 250px;
     height: 250px;
-    margin-left: -17px;
+    margin-left: -27px;
   }
 }
