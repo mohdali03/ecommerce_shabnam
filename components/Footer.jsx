@@ -1,5 +1,4 @@
 import React from "react";
-// import { AiFillInstagram, AiOutlineTwitter} from 'react-icons';
 import Link from "next/link";
 const Footer = () => {
   return (
@@ -13,8 +12,6 @@ const Footer = () => {
         </a>
       </Link>
     </div>
-    // <div className="footer-container">
-    // </div>
   );
 };
 

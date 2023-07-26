@@ -27,9 +27,6 @@ const ProductDetails = ({ product, products }) => {
     console.log(updatedqty)
 
     const inputNameValue = inputname.current.value;
-    console.log(inputNameValue)
-    // const inputEmailValue = inputemail.current.value;
-    // const inputMobileValue = inputmobile.current.value;
     const inputQtyValue = inputqty.current.value;
 
     if (

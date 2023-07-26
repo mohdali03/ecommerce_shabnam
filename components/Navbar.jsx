@@ -6,7 +6,6 @@ import Image from "next/image";
 import { useStateContext } from "../context/StateContext";
 
 const Navbar = () => {
-  // const { showCart, setShowCart, totalQuantities } = useStateContext();
 
   return (
     <div className="navbar-container">

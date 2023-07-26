@@ -5,8 +5,6 @@ body,
 * {
   padding: 0;
   margin: 0;
-  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
@@ -175,11 +173,9 @@ span.text-red {
   margin-left: -20px;
   color: #ffffff;
 
-  /* font-size: 72px; */
-
   text-transform: uppercase;
 }
-/* ..hero-banner-container h1:hover */
+
 .hero-banner-image {
   position: absolute;
   top: 10%;
@@ -198,6 +194,7 @@ span.text-red {
   flex-direction: column;
   color: #324d67;
 }
+
 .desc p {
   color: #5f5f5f;
   font-weight: 100;
@@ -249,11 +246,7 @@ iframe {
   border-radius: 20px;
   display: block;
   float: right;
-  /* margin-top: 40px; */
 }
-/* .companylink{
-  font-size: x-small;
-} */
 .banner-desc .left {
   max-width: 80vw;
   line-height: 1.2;
@@ -294,7 +287,6 @@ iframe {
   right: 0;
   top: 0;
   z-index: 100;
-  /* will-change: transform; */
   transition: all 1s ease-in-out;
 }
 .cart-container {
@@ -554,8 +546,6 @@ iframe {
   transform: scale(1.1, 1.1);
 }
 .quantity-desc {
-  /* border: 1px solid gray; */
-  /* padding: 6px; */
   border-radius: 2px;
 }
 .quantity-desc span {
@@ -568,7 +558,6 @@ iframe {
   color: #f02d34;
 }
 .quantity-desc .num {
-  /* border-right: 1px solid gray; */
   font-size: 15px;
 }
 .quantity-desc .plus {
@@ -585,7 +574,6 @@ input[type="number"] {
   margin: 0;
   &::-webkit-inner-spin-button,
   -webkit-outer-spin-button {
-    /* -webkit-appearance: none; */
     margin: 0;
     font-size: large;
     opacity: 1;
@@ -699,14 +687,11 @@ input[type="tel"] {
   }
   .footer-banner-container {
     height: 40vh;
-    /* max-width: 99vw; */
     font-size: 1rem;
-    /* padding: 80px 20px; */
   }
 
   iframe {
     height: 25vh;
-    /* margin-left: 100px; */
     width: 30vw;
     margin-top: -50px;
   }
@@ -759,7 +744,6 @@ input[type="tel"] {
     height: 560px;
     padding: 40px 15px;
     max-width: 95vw;
-    /* margin: auto; */
   }
   .hero-banner-image {
     width: 55%;
@@ -792,7 +776,6 @@ input[type="tel"] {
   .hero-banner-container {
     margin-top: 20px;
     line-height: 1.3;
-    /* margin-left: 0px; */
   }
   .hero-banner-container h1 {
     font-size: 70px;
@@ -811,11 +794,6 @@ input[type="tel"] {
   .product-detail-container {
     flex-wrap: wrap;
   }
-  /* .product-detail-container  .produ{
-    width: 350px;
-    height: 350px;
-  } */
-
   .cart-container {
     width: 415px;
     padding: 4px;
@@ -897,19 +875,15 @@ input[type="tel"] {
   }
 }
 
-
-
 @media screen and (max-width: 330px) {
   .br {
     display: none;
   }
   .hero-banner-container {
-
     height: 570px;
-    
+
     padding: 40px 15px;
     max-width: 95vw;
-    /* margin: auto; */
   }
 
   .mapshabnam {
