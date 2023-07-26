@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="footer-container">
       <p>
-        <strong>&copy; 2022 Shabnam Bag</strong>{" "}
+        <strong>&copy; 2023 Shabnam Bag</strong>{" "}
       </p>
       <Link className="companylink" href={`https://geekytechh.netlify.app`}>
         <a target="_blank">
