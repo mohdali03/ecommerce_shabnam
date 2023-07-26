@@ -740,7 +740,7 @@ input[type="tel"] {
   .product-detail-image {
     width: 300px;
     height: 300px;
-    margin-left: 30px;
+    margin-left: 4px;
   }
   input[type="text"],
   input[type="email"],
@@ -763,7 +763,7 @@ input[type="tel"] {
   }
   .hero-banner-image {
     width: 55%;
-    top: 270px;
+    top: 240px;
     right: 15px;
   }
   .footer-banner-container {
@@ -899,7 +899,7 @@ input[type="tel"] {
 
 
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 330px) {
   .br {
     display: none;
   }
