@@ -30,9 +30,9 @@ const FooterBanner = ({}) => {
           <br />
           <h3>GSTIN: 27DPCPS7069B1ZO </h3>
           <br />
-          <h3>Mr. Jamaluddin: 9320919157</h3>
+          <h3>Mr. Jamaluddin: <a href="tel:9320919157" target="_blank" rel="noreferrer" >9320919157</a></h3>
           <br />
-          <h3>Mr. Saddam: 9594679390 / 7977175538</h3>
+          <h3>Mr. Saddam: <a href="tel:9594679390" target="_blank" rel="noreferrer" >9594679390</a> / <a href="tel:9594679390" target="_blank" rel="noreferrer" >7977175538</a></h3>
         </div>
         <div className="Shopimg right">
         
