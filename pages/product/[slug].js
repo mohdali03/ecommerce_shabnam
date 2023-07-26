@@ -14,14 +14,8 @@ const ProductDetails = ({ product, products }) => {
   const inputname = useRef(null);
   const [updatedname, setUpdatedname] = useState('');
 
-  const inputemail = useRef(null);
-  const [updatedemail, setUpdatedemail] = useState('');
-
   const inputqty = useRef(null);
   const [updatedqty, setUpdatedqty] = useState('');
-
-  const inputmobile = useRef(null);
-  const [updatedmobile, setUpdatedmobile] = useState('');
   const form = useRef();
 
 
@@ -29,26 +23,21 @@ const ProductDetails = ({ product, products }) => {
     event.preventDefault();
     setUpdatedname(inputname.current.value);
     console.log(updatedname)
-    setUpdatedemail(inputemail.current.value);
-    console.log(updatedemail)
-    setUpdatedmobile(inputmobile.current.value);
-    console.log(updatedmobile)
     setUpdatedqty(inputqty.current.value);
     console.log(updatedqty)
 
     const inputNameValue = inputname.current.value;
     console.log(inputNameValue)
-    const inputEmailValue = inputemail.current.value;
-    const inputMobileValue = inputmobile.current.value;
+    // const inputEmailValue = inputemail.current.value;
+    // const inputMobileValue = inputmobile.current.value;
     const inputQtyValue = inputqty.current.value;
 
     if (
       inputNameValue.trim() !== '' ||
-      inputEmailValue.trim() !== '' ||
       inputMobileValue.trim() !== '' ||
       inputQtyValue.trim() !== ''
     ) {
-      window.location.href = `https://wa.me/917977175538?text=Hello%20Shabnam%20Bags.%20My%20name%20is%20${inputNameValue}%20and%20I%20am%20interested%20to%20buy%20${name}%20at%20${price}%20in%20a%20quantity%20of%20${inputQtyValue}.%20Please%20revert%20back%20as%20soon%20as%20possible%20and%20my%20Email%20is%20${inputEmailValue}`
+      window.location.href = `https://wa.me/917977175538?text=Hello%20Shabnam%20Bags.%20My%20name%20is%20${inputNameValue}%20and%20I%20am%20interested%20to%20buy%20${name}%20at%20${price}%20in%20a%20quantity%20of%20${inputQtyValue}.%20Please%20revert%20back%20as%20soon%20as%20possible%20`
     } else {
     }
   };
@@ -104,34 +93,12 @@ const ProductDetails = ({ product, products }) => {
               </p>
             </div>
             <div className="quantity">
-              <h3>Mobile: &nbsp;&nbsp;</h3>
-              <br className='brslug' />
-              <p className="quantity-desc">
-
-
-                <input type='tel' className='num' ref={inputmobile} min="10" max="10" name="user_phone" required placeholder="123-456-789"></input>
-
-
-              </p>
-            </div>
-            <div className="quantity">
-              <h3>Email Id:&nbsp;</h3>
-              <br className='brslug' />
-              <p className="quantity-desc">
-
-
-                <input type='email' className='num' min="20" ref={inputemail} name='user_email' placeholder='Entry Email' required></input>
-
-
-              </p>
-            </div>
-            <div className="quantity">
               <h3>Quantity:</h3>
               <br className='brslug' />
               <p className="quantity-desc">
 
 
-                <input type='number' className='num' min="20" ref={inputqty} name='user_quantity' placeholder='Minimum quatity is 20' required></input>
+                <input type='number' className='num' min="6" ref={inputqty} name='user_quantity' placeholder='Minimum Quantity is 6 piece' required></input>
               </p>
             </div>
 

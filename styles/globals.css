@@ -240,7 +240,7 @@ span.text-red {
   margin-top: 120px;
 }
 
-iframe{
+iframe {
   height: 40vh;
 }
 
@@ -688,7 +688,7 @@ input[type="tel"] {
 @media screen and (min-width: 600px) and (max-width: 900px) {
   .hero-banner-image {
     width: 40%;
-    top: 20px;
+    top: 60px;
     right: -8px;
   }
 
@@ -696,21 +696,28 @@ input[type="tel"] {
     width: 250px;
     height: 250px;
     margin-left: -17px;
-}
+  }
   .footer-banner-container {
-    height: 70vh;
+    height: 40vh;
     /* max-width: 99vw; */
     font-size: 1rem;
     /* padding: 80px 20px; */
+  }
+
+  iframe {
+    height: 25vh;
+    /* margin-left: 100px; */
+    width: 30vw;
+    margin-top: -50px;
   }
   .banner-desc {
     margin-top: -5px;
   }
 
   .banner-desc .left {
-    max-width: 60vw;
+    max-width: 50vw;
     line-height: 1;
-    margin-top: -40px;
+    margin-top: -35px;
   }
 
   .banner-desc .right {
@@ -722,20 +729,19 @@ input[type="tel"] {
   .br {
     display: none;
   }
-  
 
   input[type="number"] {
     width: 80vw;
   }
-  
-  .mapshabnam{
+
+  .mapshabnam {
     display: none;
   }
   .product-detail-image {
-    width: 270px;
-    height: 270px;
-    margin-left: -17px;
-}
+    width: 300px;
+    height: 300px;
+    margin-left: 30px;
+  }
   input[type="text"],
   input[type="email"],
   input[type="tel"] {
@@ -756,13 +762,13 @@ input[type="tel"] {
     /* margin: auto; */
   }
   .hero-banner-image {
-    width: 50%;
-    top: 275px;
+    width: 55%;
+    top: 272px;
     right: 15px;
   }
   .footer-banner-container {
     height: fit-content;
-    padding: 60px 20px; 
+    padding: 60px 20px;
     margin-top: 30px;
   }
   .footer-banner-container .left {
@@ -809,7 +815,6 @@ input[type="tel"] {
     width: 350px;
     height: 350px;
   } */
-
 
   .cart-container {
     width: 415px;
@@ -892,23 +897,26 @@ input[type="tel"] {
   }
 }
 
-@media screen and (max-width: 300px) {
+
+
+@media screen and (max-width: 310px) {
   .br {
     display: none;
   }
   .hero-banner-container {
+
     height: 570px;
+    
     padding: 40px 15px;
     max-width: 95vw;
     /* margin: auto; */
   }
-  
-  .mapshabnam{
+
+  .mapshabnam {
     display: none;
   }
 
-
-  .footer-banner-container{
+  .footer-banner-container {
     height: fit-content;
   }
   .desc p {
@@ -945,10 +953,9 @@ input[type="tel"] {
   }
   .hero-banner-image {
     width: 55%;
-    top: 255px;
+    top: 245px;
     right: 14px;
     margin-top: 30px;
-
   }
 
   .Shopimg {
@@ -959,5 +966,5 @@ input[type="tel"] {
     width: 250px;
     height: 250px;
     margin-left: -17px;
-}
+  }
 }
