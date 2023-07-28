@@ -680,6 +680,12 @@ input[type="tel"] {
     right: -8px;
   }
 
+  .hero-banner-container h1 {
+    font-size: 5em;
+    padding-left: 20px;
+    max-width: 40vw;
+  }
+
   .product-detail-image {
     width: 250px;
     height: 250px;
@@ -881,14 +887,12 @@ input[type="tel"] {
   }
   .hero-banner-container {
     height: 570px;
-  
-
 
     padding: 40px 15px;
     max-width: 95vw;
   }
-  .hero-banner-container h1{
-    font-size: 65px ;
+  .hero-banner-container h1 {
+    font-size: 65px;
   }
   .mapshabnam {
     display: none;
@@ -924,7 +928,7 @@ input[type="tel"] {
   .product-detail-image {
     max-width: 250px;
     max-height: 250px;
-    margin-left: 20px;
+    margin-left: 30px;
   }
   .cart-icon .whatsapp {
     margin-left: 50px;
@@ -938,11 +942,5 @@ input[type="tel"] {
 
   .Shopimg {
     display: none;
-  }
-
-  .product-detail-image {
-    width: 250px;
-    height: 250px;
-    margin-left: -27px;
   }
 }
