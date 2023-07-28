@@ -10,8 +10,8 @@ const Navbar = () => {
   return (
     <div className="navbar-container">
       <p className="logo">
-        <Link href={`/`}>
-          <img className="logo img" src="./ALVIRA.jpg" alt="Logo" />
+        <Link className="logo img logo text"href={`/`}>
+          <a >Shabnam Bag</a>
         </Link>
       </p>
 

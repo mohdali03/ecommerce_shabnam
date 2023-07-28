@@ -875,17 +875,21 @@ input[type="tel"] {
   }
 }
 
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 376px) {
   .br {
     display: none;
   }
   .hero-banner-container {
     height: 570px;
+  
+
 
     padding: 40px 15px;
     max-width: 95vw;
   }
-
+  .hero-banner-container h1{
+    font-size: 65px ;
+  }
   .mapshabnam {
     display: none;
   }
@@ -927,7 +931,7 @@ input[type="tel"] {
   }
   .hero-banner-image {
     width: 55%;
-    top: 250px;
+    top: 200px;
     right: 14px;
     margin-top: 30px;
   }

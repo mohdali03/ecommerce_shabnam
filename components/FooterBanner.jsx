@@ -8,7 +8,7 @@ const FooterBanner = ({}) => {
         <div className="left">
           <h1>Contact Us</h1>
           <br />
-          <h1>Alvira - Shabnam Bags</h1>
+          <h1>Shabnam Bags - Alvira</h1>
           <br />
           <h3>
             <Link
