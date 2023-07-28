@@ -17,7 +17,7 @@ const Navbar = () => {
 
       <button type="button" className="cart-icon whatsapp">
         <Link
-          href={`https://wa.me/918828081163?text=Hii%2C%0AI%20am%20at%20your%20online%20store%20and%20need%20some%20help.`}
+          href={`https://wa.me/917977175538?text=Hii%2C%0AI%20am%20at%20your%20online%20store%20and%20need%20some%20help.`}
           target="_blank"
           rel="noopener noreferrer"
         >
